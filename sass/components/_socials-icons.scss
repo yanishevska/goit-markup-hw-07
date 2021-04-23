@@ -6,10 +6,15 @@
   width: 20px;
   height: 20px;
   fill: var(--social-icons-color);
-}
 
-.social-icons__icon {
-  transition: fill var(--animation);
+  & {
+    transition: fill var(--animation);
+  }
+
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
+    fill: var(--main-white-color);
+  }
 }
 
 .social-icons__link {
@@ -22,16 +27,11 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color var(--animation);
-}
 
-.social-icons__link:hover,
-.social-icons__link:focus {
-  background-color: var(--accent-color);
-}
-
-.social-icons__link:hover .social-icons__icon,
-.social-icons__link:focus .social-icons__icon {
-  fill: var(--main-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .social-icons--footer-color {

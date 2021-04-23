@@ -18,14 +18,13 @@
 
   fill: var(--main-text-color);
   transition: fill var(--animation), color var(--animation);
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
-
 .contacts__icon {
   margin-right: 10px;
 }

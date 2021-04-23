@@ -18,8 +18,8 @@
 
   transform: translateY(103%);
   transition: transform var(--animation);
-}
 
-.card__link:hover .card-thumb__content {
-  transform: translateY(0);
+  .card__link:hover & {
+    transform: translateY(0);
+  }
 }

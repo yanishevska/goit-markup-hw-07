@@ -11,10 +11,10 @@
   border-radius: 4px;
 
   transition: color var(--animation), background-color var(--animation);
-}
 
-.button:hover,
-.button:focus {
-  background-color: var(--accent-color);
-  color: var(--main-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-white-color);
+  }
 }

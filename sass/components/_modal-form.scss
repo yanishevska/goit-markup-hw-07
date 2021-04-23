@@ -14,11 +14,11 @@
   border-radius: 4px;
   cursor: pointer;
   transition: border-color var(--animation);
-}
 
-.form__input:hover,
-.form__input:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .form__label {
@@ -35,11 +35,11 @@
   top: 52%;
   left: 12px;
   transition: fill var(--animation);
-}
 
-.form__input:hover + .form__icon,
-.form__input:focus + .form__icon {
-  fill: var(--accent-color);
+  .form__input:hover + &,
+  .form__input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .form__comment {
@@ -52,27 +52,18 @@
   cursor: pointer;
 
   transition: border-color var(--animation);
-}
 
-.form__comment:hover,
-.form__comment:focus {
-  border-color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.form__comment::placeholder {
-  line-height: 16px;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    line-height: 16px;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form__check-label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form__link {
@@ -80,24 +71,7 @@
   margin-left: 5px;
 }
 
-.form__icon-check {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-
-  border: 2px solid var(--title-text-color);
-  border-radius: 4px;
-}
-.form__checkbox:checked + .form__icon-check {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  background-image: url(../images/icons.svg/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-}
-
-.form__button-checkbox {
+.form__button {
   display: block;
   align-items: center;
   text-align: center;
@@ -117,9 +91,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color var(--animation);
-}
 
-.form__button-checkbox:hover,
-.form__button-checkbox:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

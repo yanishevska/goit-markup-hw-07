@@ -10,10 +10,10 @@
   margin-right: 30px;
   margin-bottom: 0;
   height: 90px;
-}
 
-.clients__item:nth-child(6n) {
-  margin-right: 0px;
+  &:nth-child(6n) {
+    margin-right: 0px;
+  }
 }
 
 .clients__label {
@@ -28,10 +28,10 @@
   fill: #afb1b8;
 
   transition: border var(--animation), fill var(--animation);
-}
 
-.clients__label:hover,
-.clients__label:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
 }

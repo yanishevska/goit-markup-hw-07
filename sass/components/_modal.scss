@@ -67,9 +67,9 @@
 
   background-color: var(--main-white-color);
   transition: fill var(--animation);
-}
 
-.modal__btn-close:hover,
-.modal__btn-close:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
